@@ -1,5 +1,5 @@
 module Enumerable
-  def each_cons(n, &block)
+  def each_cons n
     puts 'reimprement here'
   end
 end
