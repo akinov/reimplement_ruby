@@ -1,5 +1,5 @@
 module Enumerable
-    puts 'reimprement here'
   def chunk
+    puts 'reimprement here'
   end
 end
