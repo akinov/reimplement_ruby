@@ -1,5 +1,5 @@
 class Array
-  def cycle n = nil
+  def cycle(n = nil)
     puts 'reimprement here'
   end
 end
