@@ -1,0 +1,6 @@
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Metrics/LineLength:
+  Max: 160
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
