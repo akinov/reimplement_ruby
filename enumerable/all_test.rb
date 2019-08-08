@@ -10,9 +10,9 @@ class AllTest < MiniTest::Test
 
   # all? {|item| ... } -> bool
   def test_all_block_given
-    assert_equal true, [5,  6, 7].all? {|v| v > 0 }
-    assert_equal false, [5, -1, 7].all? {|v| v > 0 }
-    assert_equal true, [].all? {|v| v > 0 } 
+    assert_equal true, [5, 6, 7].all?(&:positive?)
+    assert_equal false, [5, -1, 7].all?(&:positive?)
+    assert_equal true, [].all?(&:positive?)
   end
 
   # all?(pattern) -> bool
