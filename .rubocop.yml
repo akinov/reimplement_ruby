@@ -4,3 +4,7 @@ Metrics/LineLength:
   Max: 160
 Lint/AmbiguousBlockAssociation:
   Enabled: false
+Lint/UnusedMethodArgument:
+  Enabled: false
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
