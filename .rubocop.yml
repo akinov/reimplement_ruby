@@ -8,3 +8,5 @@ Lint/UnusedMethodArgument:
   Enabled: false
 Naming/UncommunicativeMethodParamName:
   Enabled: false
+Metrics/MethodLength:
+  Max: 30
