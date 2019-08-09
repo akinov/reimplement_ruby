@@ -1,5 +1,5 @@
 class Array
-  def any?(pattern = nil)
+  def any?(*args)
     puts 'reimprement here'
   end
 end

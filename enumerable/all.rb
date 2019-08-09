@@ -1,5 +1,5 @@
 module Enumerable
-  def all?(pattern = nil)
+  def all?(*args)
     puts 'reimprement here'
   end
 end
