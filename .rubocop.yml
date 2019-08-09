@@ -10,3 +10,7 @@ Naming/UncommunicativeMethodParamName:
   Enabled: false
 Metrics/MethodLength:
   Max: 30
+Metrics/AbcSize:
+  Max: 30
+Style/Documentation:
+  Enabled: false
