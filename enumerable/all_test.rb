@@ -18,5 +18,7 @@ class AllTest < MiniTest::Test
   # all?(pattern) -> bool
   def test_all_pattern
     assert_equal false, %w[ant bear cat].all?(/t/)
+    assert_equal true, %w[peach bear eat].all?(/ea/)
+    assert_equal true, [1, 50, 99].any?(Integer)
   end
 end

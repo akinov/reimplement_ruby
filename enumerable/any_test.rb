@@ -18,6 +18,7 @@ class AnyTest < MiniTest::Test
   # any?(pattern) -> bool
   def test_pattern
     assert_equal false, %w[ant bear cat].any?(/d/)
+    assert_equal true, %w[ant bear cat].any?(/b/)
     assert_equal true, [nil, true, 99].any?(Integer)
   end
 end
