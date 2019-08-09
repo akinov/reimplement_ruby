@@ -11,6 +11,8 @@ class Array
       pettern = args.shift
       lamda = if pettern.is_a? Class
                 ->(v) { v.is_a? pettern }
+              elsif pettern.is_a? Regexp
+                ->(v) { v =~ pettern }
               else
                 ->(v) { v === pettern }
               end
