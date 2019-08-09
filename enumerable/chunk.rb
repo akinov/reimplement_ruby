@@ -1,7 +1,7 @@
 module Enumerable
   def chunk
     return to_enum(:chunk) unless block_given?
-    
+
     Enumerator.new do |y|
       tmp = []
       block_result = nil
@@ -14,7 +14,6 @@ module Enumerable
         end
         block_result = tmp_block_result
         tmp << n
-
       end
       y << [block_result, tmp]
     end
