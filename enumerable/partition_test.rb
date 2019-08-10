@@ -3,7 +3,7 @@ require_relative 'partition'
 
 class EachConsTest < MiniTest::Test
   # partition -> Enumerator
-  def test
+  def test_partition
     assert_equal Enumerator, (1..8).partition.class
   end
 

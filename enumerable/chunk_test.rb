@@ -3,7 +3,7 @@ require_relative 'chunk'
 
 class ChunkTest < MiniTest::Test
   # chunk {|elt| ... } -> Enumerator
-  def test
+  def test_chunk
     chunk_result = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5].chunk(&:even?)
     expected_result = [[false, [3, 1]], [true, [4]], [false, [1, 5, 9]], [true, [2, 6]], [false, [5, 3, 5]]]
 

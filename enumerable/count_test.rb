@@ -3,7 +3,7 @@ require_relative 'count'
 
 class AllTest < MiniTest::Test
   # count -> Integer
-  def test
+  def test_count
     assert_equal 4, [1, 2, 4, 2].count
   end
 

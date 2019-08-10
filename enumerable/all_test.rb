@@ -3,7 +3,7 @@ require_relative 'all'
 
 class AllTest < MiniTest::Test
   # all? -> bool
-  def test
+  def test_all
     assert_equal true, [true, true].all?
     assert_equal false, [true, false].all?
   end

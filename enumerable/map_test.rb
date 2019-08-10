@@ -4,7 +4,7 @@ require_relative 'map'
 class AllTest < MiniTest::Test
   # collect -> Enumerator
   # map -> Enumerator
-  def test
+  def test_map
     assert_equal Enumerator, [].map.class
   end
 

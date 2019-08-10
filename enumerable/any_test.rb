@@ -3,7 +3,7 @@ require_relative 'any'
 
 class AnyTest < MiniTest::Test
   # any? -> bool
-  def test
+  def test_any
     assert_equal true, [nil, true, 99].any?
     assert_equal false, [].any?
   end

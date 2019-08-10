@@ -3,7 +3,7 @@ require_relative 'cycle'
 
 class CycleTest < MiniTest::Test
   # cycle(n=nil) -> Enumerator
-  def test
+  def test_cycle
     assert_equal Enumerator, %w[a b c].cycle(2).class
     assert_equal %w[a b c a b c], %w[a b c].cycle(2).map { |v| v }
   end

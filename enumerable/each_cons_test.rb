@@ -3,7 +3,7 @@ require_relative 'each_cons'
 
 class EachConsTest < MiniTest::Test
   # each_cons(n) -> Enumerator
-  def test
+  def test_each_cons
     each_cons_result = (1..5).each_cons(3)
 
     assert_equal Enumerator, each_cons_result.class
