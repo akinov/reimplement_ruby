@@ -20,4 +20,10 @@ class AllTest < MiniTest::Test
   def test_with_nil_args
     assert_equal 1, [1, 2, 4, 2, nil].count(nil)
   end
+
+  def test_with_arg_error
+    assert_raises ArgumentError do
+      [1, 2, 4, 2].count(1,2)
+    end
+  end
 end
