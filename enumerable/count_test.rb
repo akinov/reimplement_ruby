@@ -16,4 +16,8 @@ class AllTest < MiniTest::Test
   def test_block_given
     assert_equal 3, [1, 2, 4, 2].count(&:even?)
   end
+
+  def test_with_nil_args
+    assert_equal 1, [1, 2, 4, 2, nil].count(nil)
+  end
 end
